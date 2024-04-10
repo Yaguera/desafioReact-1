@@ -1,7 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 *{
@@ -10,34 +11,20 @@
   box-sizing: border-box;
 }
 
-#canva{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
+.container{
+  background-color: antiquewhite;
+  width: 420px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.circle{
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 2px solid red;
-  border-radius: 50%;
-}
-
-button{
-  background-color: #c9c9c9;
-  border: none;
-  border-radius: .5rem;
-  padding: 30px;
-  margin: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover{
-  background-color: #8f8f8f;
+.box{
+  width: 140px;
+  height: 140px;
+  border: 1px solid black;
+  color: black;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
